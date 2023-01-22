@@ -224,7 +224,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="/pakettransaksi2" class="nav-link">
+            <a href="/transaksi1" class="nav-link">
             <span class=""><i class="fas fa-shopping-basket"></i></span>
               <p>
                 Data Laundry

@@ -2,8 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\pelanggancontroller;
- use App\Http\Controllers\pakettransaksi2Controller;
-use App\Http\Controllers\paket1controller;
+use App\Http\Controllers\paket1Controller;
+use App\Http\Controllers\transaksi1Controller;
 
 
 /*
@@ -29,17 +29,17 @@ Route::get('/Delete/{id}', [paket1controller::class, 'Delete'])->name('paket1.De
 
 //data pelanggan
 Route::get('/pelanggan',[Pelanggancontroller::class, 'index'])->name('pelanggan.index');
-Route::get('/create',[pelanggancontroller::class, 'create'])->name('pelanggan.create');
-Route::post('/createpelanggan', [Pelanggancontroller::class, 'store'])->name('pelanggan.store');
-Route::get('/edit/{id}', [Pelanggancontroller::class, 'edit'])->name('pelanggan.edit');
+Route::get('/createy',[pelanggancontroller::class, 'createy'])->name('pelanggan.createy');
+Route::post('/createypelanggan', [Pelanggancontroller::class, 'store'])->name('pelanggan.store');
+Route::get('/edity/{id}', [Pelanggancontroller::class, 'edity'])->name('pelanggan.edity');
 Route::post('/update/{id}', [Pelanggancontroller::class, 'update'])->name('pelanggan.update');
 Route::get('/delete/{id}', [Pelanggancontroller::class, 'delete'])->name('pelanggan.delete');
 
 //status data laundry
- Route::get('/pakettransaksi2',[pakettransaksi2Controller::class, 'indexy'])->name('pakettransaksi2.indexy');
-Route::get('/createy',[pakettransaksi2Controller::class, 'createy'])->name('pakettransaksi2.createy');
-Route::post('/createypakettransaksi2', [pakettransaksi2Controller::class, 'storey'])->name('pakettransaksi2.storey');
-Route::get('/edity/{id}', [pakettransaksi2Controller::class, 'edity'])->name('pakettransaksi2.edity');
-Route::post('/update{id}', [pakettransaksi2Controller::class, 'update'])->name('pakettransaksi2.update');
-Route::get('/elete/{id}', [pakettransaksi2Controller::class, 'Delete'])->name('pakettransaksi2.Delete');
+Route::get('/transaksi1',[transaksi1Controller::class, 'index'])->name('transaksi1.index');
+Route::get('/create',[transaksi1Controller::class, 'create'])->name('transaksi1.create');
+Route::post('/createtransaksi1', [transaksi1Controller::class, 'store'])->name('transaksi1.store');
+Route::get('/edit/{id}', [transaksi1Controller::class, 'edit'])->name('transaksi1.edit');
+Route::post('/update{id}', [transaksi1Controller::class, 'update'])->name('transaksi1.update');
+Route::get('/elete/{id}', [transaksi1Controller::class, 'Delete'])->name('transaksi1.Delete');
  

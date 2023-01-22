@@ -16,7 +16,7 @@ class pelanggancontroller extends Controller
     }
     public function create()
     {
-        return view('pelanggan.create');
+        return view('pelanggan.createy');
     }
 
     public function store(Request $request)
@@ -28,10 +28,10 @@ class pelanggancontroller extends Controller
         ]);
         return redirect(route('pelanggan.index'));
     }
-    public function edit($id)
+    public function edity($id)
     {
         $pelanggan = Pelanggan::whereId($id)->first();
-        return view('Pelanggan.edit')->with('pelanggan', $pelanggan);
+        return view('Pelanggan.edity')->with('pelanggan', $pelanggan);
     }
 
 
