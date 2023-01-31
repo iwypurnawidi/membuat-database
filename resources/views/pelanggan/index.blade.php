@@ -33,10 +33,15 @@
             <th>ALAMAT</th>
             <th>TELEPON</th>
           </thead>
+          @php
+          $no = 1;     
+          @endphp
+        
           @foreach ($pelanggan as $p)
-          <tbody>
-            
-            <td>{{ $p->id }}</td>
+        
+            <tbody>
+             
+            <td>{{ $no++ }}</td>
             <td>{{ $p->name }}</td>
             <td>{{ $p->alamat }}</td>
             <td>{{ $p->telepon }}</td>

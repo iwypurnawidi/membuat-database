@@ -18,7 +18,7 @@
             </div>
             <div class="box-body">
                
-            <form action="{{ route('paket1.store1') }}" method="POST">
+            <form action="{{ route('paket1.store2') }}" method="POST">
                 @csrf
             <form role="form">
               <div class="box-body">

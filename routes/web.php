@@ -26,7 +26,9 @@ Route::get('/', function () {
 //paket transaksi
 Route::get('/paket1',[Paket1controller::class, 'index1'])->name('paket1.index1')->middleware('auth');
 Route::get('/add',[Paket1controller::class, 'add'])->name('paket1.add');
-Route::post('/addpaket1',[Paket1controller::class, 'store1'])->name('paket1.store1');
+Route::post('/addpaket1',[Paket1controller::class, 'store2'])->name('paket1.store2');
+Route::get('/edd/{id}', [Paket1controller::class, 'edd'])->name('paket1.edd');
+Route::post('/update1/{id}', [Paket1controller::class, 'update1'])->name('paket1.update1');
 Route::get('/Delete/{id}', [paket1controller::class, 'Delete'])->name('paket1.Delete');
 
 //data pelanggan

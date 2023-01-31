@@ -36,11 +36,17 @@
             <th>Total Harga</th>
             <th>Status</th>
           </thead>
+          
+            @php
+            $no = 1;     
+            @endphp
            @foreach ($transaksi1 as $t)
           
-          <tbody>
+          
+            <tbody>
             
-            <td>{{ $t->id }}</td>
+            
+            <td>{{ $no++ }}</td>
             <td>{{ $t->name }}</td>
             <td>{{ $t->barang }}</td>
             <td>{{ $t->harga }}</td>

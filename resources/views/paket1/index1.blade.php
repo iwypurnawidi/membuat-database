@@ -46,15 +46,19 @@
 </tr>
 </thead>
 <tbody>
+  @php
+  $no = 1;     
+  @endphp
                     @foreach($paket1 as $p)
                    <tr>           
-                            <td>{{ $p->id }}</td>
+                            <td>{{ $no++ }}</td>
                             <td>{{ $p->name }}</td>
                             <td>{{ $p->harga }}</td>
           <td>
-            <div style="width:60px">         
+             
+              <a href="{{ route('paket1.edd',$p->id) }}"class="btn btn-warning btn-xs">edit</a>        
              <a href="{{ route('paket1.Delete',$p->id) }}" class="btn btn-danger btn-xs" id="Delete">hapus</i></a>
-        </div>
+        
     </td>
 </tr>
 </td>         
